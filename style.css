@@ -2,7 +2,8 @@
 
 body {
     font-family: 'Asul', sans-serif;;
-    background-image: url('background.webp');
+    /* background-image: url('background.webp'); */
+    background-color: #6c757d;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -12,6 +13,7 @@ body {
     height: 75px;
     text-align: center;
     padding: 25px 0;
+    box-shadow: 5px 5px 1px -2px #8f8f9d;
 }
 
 .buttonStyle:active {
@@ -28,75 +30,52 @@ body {
 
 .selectContainer {
     width: 90%;
+    padding: 25px 0;
 }
 
 .attackButton {
     height: 75px;
     text-align: center;
     padding: 25px 0;
+    margin-bottom: 55px;
     width: 96.7%;
+    box-shadow: 5px 5px 5px -2px #ac1a15;
 }
 
 .resultsArea {
-    padding: 20px;
+    /* padding: 20px; */
+    height: 110px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
 
-.resultsArea > * {
+/* .resultsArea > * {
     padding: 20px 20px;
-}
+} */
 
 .resultsArea > p {
-    font-size: xx-large;
+  font-size: xx-large;
 }
 
-.fade-in {
-    animation: fadeIn ease 1s;
-    -webkit-animation: fadeIn ease 1s;
-    -moz-animation: fadeIn ease 1s;
-    -o-animation: fadeIn ease 1s;
-    -ms-animation: fadeIn ease 1s;
-  }@keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-moz-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-o-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-ms-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-  }
+/* .resultsArea > img {
+  padding-bottom: 33px
+} */
+
+.hidden {
+  display: none;
+}
+
+.imgSize {
+  width: 50px;
+  height: 50px;
+}
+
+.spin {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

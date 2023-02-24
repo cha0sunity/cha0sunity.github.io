@@ -13,6 +13,9 @@ const showResults = () => {
         results.innerHTML = attack.roll;
     }
     
+    hideShow();
+    setTimeout(hideShow,250)
+
     damagResults.innerHTML = damage;
 }
 
@@ -120,6 +123,17 @@ const dice = (x) => {
    return num;
 }
 
+const hideShow = () => {
+    let a = document.getElementById("results");
+    let b = document.getElementById("resultsDice");
+    let c = document.getElementById("damageDice");
+    let d = document.getElementById("damage");
+
+    a.classList.toggle("hidden");
+    b.classList.toggle("hidden");
+    c.classList.toggle("hidden");
+    d.classList.toggle("hidden");
+}
 
 //show roll
 
